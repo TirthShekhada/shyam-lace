@@ -11,3 +11,62 @@ header .custom-img svg {
 .footer-div {
     height: max-content !important;
 }
+.top-navbar .custom-img .logo {
+    width: 140px !important;
+}
+.navbar-megamenu .firstlevel-menu li.megamenu-item ul li a {
+    width: max-content !important;
+}
+
+#discovery-slider .splide__slide a {
+    display: block;
+}
+#discovery-slider .splide__slide a img {
+    border-radius: 15px;
+    overflow: hidden;
+}
+@media (max-width: 1024px) {
+    .top-navbar .custom-img .logo {
+        width: 100px !important;
+    }
+}
+
+#trending-slider .splide__slide,
+#shop-gender-slider .splide__slide {
+    height: max-content;
+}
+
+#trending-slider .splide__track,
+#shop-gender-slider .splide__track {
+    height: max-content;
+}
+
+#trending-slider .splide__slide img ,
+#shop-gender-slider img {
+    border-radius: 10px;
+}
+#trending-slider .splide__slide a ,
+#shop-gender-slider .splide__slide a {
+    display: block;
+}
+#trending-slider .splide__slide .help-text-section ,
+#shop-gender-slider .splide__slide .help-text-section {
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+
+
+#diamondSlider {
+    padding-bottom: 50px;
+}
+#diamondSlider video {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#diamondSlider .splide__track {
+    height: max-content;
+}

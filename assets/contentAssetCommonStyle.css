@@ -37,7 +37,7 @@
 /* exchange-terms-and-condition s*/
 .trems-and-conditions h2 {
     font: normal normal bold 1.5rem / 3.4375rem "nunito_sansregular";
-    color: #832729;
+    color: #2f3092;
     text-align: left;
     padding-bottom: .3125rem;
 }
@@ -139,7 +139,7 @@
     }
 
     button {
-        background: linear-gradient(90.18deg, #832729 0.17%, #631517 99.86%);
+        background: linear-gradient(90.18deg, #2f3092 0.17%, #631517 99.86%);
         backdrop-filter: blur(24px);
         width: fit-content;
         height: fit-content;
@@ -160,7 +160,7 @@
             align-items: center;
             width: 32px;
             height: 32px;
-            background: #832729;
+            background: #2f3092;
             box-shadow: 16px 16px 15.9px 4px #490A0C91 inset;
             border-radius: 50%;
         }
@@ -215,7 +215,7 @@
 .fis-promotion-section .fis-promotion-cta {
     font: 400 12px "Fraunces", serif;
     color: #fff !important;
-    background: linear-gradient(90.18deg, #832729 0.17%, #631517 99.86%) !important;
+    background: linear-gradient(90.18deg, #2f3092 0.17%, #631517 99.86%) !important;
     height: 48px;
     padding: 15px 8px 15px 20px;
     border-radius: 50px;
@@ -231,7 +231,7 @@
     padding: 10px 12px;
     width: 32px;
     height: 32px;
-    background: #832729;
+    background: #2f3092;
     border-radius: 50%;
 }
 
@@ -342,7 +342,7 @@
             border-radius: 40px;
             width: fit-content;
             height: 60px;
-            background: linear-gradient(90.18deg, #832729 0.17%, #631517 99.86%);
+            background: linear-gradient(90.18deg, #2f3092 0.17%, #631517 99.86%);
             font: 400 16px "Fraunces", serif;
             font-size: 16px;
             font-weight: 400;
@@ -373,7 +373,7 @@
             }
 
             span {
-                background: #832729;
+                background: #2f3092;
                 box-shadow: 16px 16px 15.9px 4px #490a0c91 inset;
                 width: 36px;
                 height: 36px;
@@ -866,8 +866,8 @@ aspect-ratio: 1/1;
     bottom: 0;
     width: 100%;
     /* background: transparent linear-gradient(180deg, #5B040D00 0%, #360615 100%) 0% 0% no-repeat padding-box; */
-    background: rgb(131,39,41);
-    background: linear-gradient(360deg, rgba(131,39,41,1) 0%, rgba(131,39,41,0.95) 5%, rgba(131,39,41,0) 100%);
+    /* background: rgb(44,104,0.95); */
+    background: linear-gradient(360deg, rgba(0,44,104,0.95) 0%, rgba(0,44,104,0.95) 5%, rgba(131,39,41,0) 100%);
     border-radius: 10px;
     height: 120px;
 }
@@ -967,7 +967,7 @@ aspect-ratio: 1/1;
     }
     .home-tq-assurance-carousel-section .home-tq-assurance-head h3 span.red {
         font: 400 72px "Fraunces", serif;
-        color: #832729;
+        color: #2f3092;
     }
     .home-tq-assurance-carousel-section .home-tq-assurance-head p {
         font: 400 24px "Fraunces", serif;
@@ -1027,7 +1027,7 @@ aspect-ratio: 1/1;
         clip-path: polygon(5px 0%, 23px 0%, 28px 50%, 23px 100%, 5px 100%, 0 50%);
         width: 28px !important;
         transform: rotate(0);
-        background: #832729 !important;
+        background: #2f3092 !important;
     }
 
     @media only screen and (max-width: 767.5px) {
@@ -1044,7 +1044,7 @@ aspect-ratio: 1/1;
         }
         .home-tq-assurance-carousel-section .home-tq-assurance-head h3 span.red {
             font: 400 32px "Fraunces", serif;
-            color: #832729;
+            color: #2f3092;
         }
         .home-tq-assurance-carousel-section .home-tq-assurance-head p {
             font: 400 14px "Fraunces", serif;
@@ -1168,7 +1168,7 @@ img {
 a.cta {
     font: 400 20px "Fraunces", serif;
     color: #070202 !important;
-    border: 1px solid #832729;
+    border: 1px solid #2f3092;
     background: #fff;
     border-radius: 30px;
     height: 60px;
@@ -1216,7 +1216,7 @@ a.cta i {
 }
 .gift-section .text-sec h3 {
     font: 400 64px "Fraunces", serif;
-    color: #832729;
+    color: #2f3092;
     margin: 0 0 5px 0;
 }
 .gift-section .text-sec p {
@@ -1225,11 +1225,11 @@ a.cta i {
 }
 .gift-section .text-sec span {
     font: 500 18px/28px "IBM Plex Sans", sans-serif;
-    color: #832729;
+    color: #2f3092;
     text-transform: uppercase;
 }
 .gift-section a.cta {
-    border: 1px solid #832729;
+    border: 1px solid #2f3092;
 }
 .exchange-section {
     position: relative;
@@ -1246,8 +1246,8 @@ a.cta i {
     padding: 126px 80px 50px;
 }
 .exchange-section .text-sec .exchange-icon {
-    width: 100px;
-    height: 92px;
+    width: 225px;
+    /* height: 92px; */
     margin: 0 0 20px 15px;
 }
 .exchange-section .text-sec h3 {
@@ -1385,8 +1385,8 @@ a.cta i {
         text-align: center;
     }
     .exchange-section .text-sec .exchange-icon {
-        width: 66px;
-        height: 53px;
+        width: 100px;
+        /* height: 53px; */
         text-align: center;
         margin: 0 0 10px 0;
     }
