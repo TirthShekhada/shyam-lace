@@ -20975,6 +20975,7 @@ button.back-to-top {
 button.back-to-top img {
   width: 24px;
   height: 21px;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   button.back-to-top {
@@ -21008,6 +21009,7 @@ button.back-to-top img {
   button.back-to-top img {
     width: 24px;
     height: 21px;
+    object-fit: cover;
   }
 }
 @media (min-width: 1024px) {
@@ -21041,6 +21043,7 @@ button.back-to-top img {
   button.back-to-top img {
     width: 24px;
     height: 21px;
+    object-fit: cover;
   }
 }
 @media (min-width: 1280px) and (max-width: 1299.98px) {
