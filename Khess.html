@@ -1,0 +1,1409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khess</title>
+
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://cdn.cquotient.com" />
+    <link rel="preconnect" href="https://accounts.tatadigital.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="./assets/swiperSlider.css" as="style" media="print" onload="this.media = 'all'"/>
+    <noscript>
+      <link rel="stylesheet" href="./assets/swiperSlider.css" />
+    </noscript>
+    <link rel="stylesheet" href="./assets/accordion.css" as="style" media="print" onload="this.media = 'all'"/>
+    <noscript>
+      <link rel="stylesheet" href="./assets/accordion.css" />
+    </noscript>
+    <link rel="preload" href="/on/demandware.static/Sites-Tanishq-Site/-/default/dw3a0589bb/fonts/nunitosans-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <style>
+      @font-face {
+        font-family: "Cabrito Didone";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Cabrito Didone"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw4dfbe964/fonts/CabritoDidone.ttf)
+            format("ttf");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Proxima Nova Thin";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Proxima Nova Thin"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwce5a1383/fonts/ProximaNovaT-Thin.woff)
+            format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Proxima Nova Regular";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Proxima Nova Regular"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw9961258f/fonts/ProximaNova-Regular.woff)
+            format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansblack";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwbfecbfea/fonts/nunitosans-black-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw920a29ec/fonts/nunitosans-black-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw495036e2/fonts/nunitosans-black-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansbold";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw019bb1c7/fonts/nunitosans-bold-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwdfdbca5f/fonts/nunitosans-bold-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwf492b9ea/fonts/nunitosans-bold-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansextrabold";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw915243b4/fonts/nunitosans-extrabold-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwd23c8499/fonts/nunitosans-extrabold-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwafcacf7f/fonts/nunitosans-extrabold-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansextralight";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwd0bcf025/fonts/nunitosans-extralight-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwf5438543/fonts/nunitosans-extralight-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw7915ed0b/fonts/nunitosans-extralight-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sanslight";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwbeb3ca5c/fonts/nunitosans-light-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwbe34bdb9/fonts/nunitosans-light-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwc73a9fdf/fonts/nunitosans-light-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansregular";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw3a0589bb/fonts/nunitosans-regular-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw64b12a2b/fonts/nunitosans-regular-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw362891b6/fonts/nunitosans-regular-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sanssemibold";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwaf929730/fonts/nunitosans-semibold-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw07262ecb/fonts/nunitosans-semibold-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw4c899880/fonts/nunitosans-semibold-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <!--[if gt IE 9]><!-->
+    <script defer="" type="text/javascript" src="./assets/main.js"></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="./assets/catResponsive.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="./assets/multiImageLayout.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="./assets/homepageVideoBannerAutoPlay.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="./assets/campaignBanner.js"
+    ></script>
+    <script defer="" type="text/javascript" src="./assets/tryItOn.js"></script>
+    <!--<![endif]-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Shyam Lace</title>
+    <meta name="description" content="Shyam Lace" />
+    <!-- Fix for Flash of Unstyled Content ( FOUC ) -->
+    <!-- Reference links: https://dev.to/lyqht/what-the-fouc-is-happening-flash-of-unstyled-content-413j , https://webkit.org/blog/66/the-fouc-problem/ -->
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
+    <!-- Critical inline CSS for above-the-fold rendering (extracted from head.css / global.css) -->
+    <style>
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        min-height: 100vh;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <link rel="alternate" hreflang="en-ae" href="https://www.tanishq.ae/" />
+    <link rel="alternate" hreflang="en-us" href="https://www.tanishq.com/" />
+    <link rel="alternate" hreflang="en-ca" href="https://www.tanishq.com/ca/" />
+    <link rel="icon" type="image/png" href="./image/favicon.png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      as="style"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <!-- Fallback that only gets inserted when JavaScript is disabled, in which case we can't load CSS asynchronously. -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    </noscript>
+    <link rel="stylesheet" href="./assets/global.css" />
+    <link rel="stylesheet" href="./assets/head.css" />
+    <link rel="stylesheet" href="./assets/swiperSlider.css" />
+    <link rel="stylesheet" href="./assets/accordion.css" />
+    <meta
+      name="google-site-verification"
+      content="5BjsAn58YNoCy-4owF74RAq9uO9lLEhWpakp6C9MuSo"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/contentAssetCommonStyle.css"
+      as="style"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <!-- Fallback that only gets inserted when JavaScript is disabled, in which case we can't load CSS asynchronously. -->
+    <noscript>
+      <link rel="stylesheet" href="./assets/contentAssetCommonStyle.css" />
+    </noscript>
+    <script
+      src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/en_IN/v1780118099705/js/contentAssetCommonScript.js"
+      defer=""
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./assets/skin.css"
+      as="style"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <!-- Fallback that only gets inserted when JavaScript is disabled, in which case we can't load CSS asynchronously. -->
+    <noscript>
+      <link rel="stylesheet" href="./assets/skin.css" />
+    </noscript>
+    <script>
+      var pageAction = "homeshow";
+      window.dataLayer = window.dataLayer || [];
+      window.gtmEnabled = true;
+      window.sendCustomersGeolocationDataToGTM = true;
+      var orderId = -1;
+      var dataLayerEvent = { event: "home", currentPageView: "HomePageView" };
+
+      // In all cases except Order Confirmation, the data layer should be pushed, so default to that case
+      var pushDataLayer = true;
+      if (pageAction === "orderconfirm") {
+        // As of now, the correction is for order confirmation only
+        if (dataLayerEvent) {
+          orderId = getOrderId(dataLayerEvent);
+        }
+
+        var ordersPushedToGoogle = getOrdersPushedToGoogle();
+        var orderHasBeenPushedToGoogle = orderHasBeenPushedToGoogle(
+          orderId,
+          ordersPushedToGoogle,
+        );
+        if (orderHasBeenPushedToGoogle) {
+          // If the data has already been sent, let's not push it again.
+          pushDataLayer = false;
+        }
+      }
+
+      if (pushDataLayer) {
+        if (dataLayerEvent) {
+          dataLayer.push(dataLayerEvent);
+        }
+
+        if (pageAction === "orderconfirm") {
+          // Add the orderId to the array of orders that is being stored in localStorage
+          ordersPushedToGoogle.push(orderId);
+          // The localStorage is what is used to prevent the duplicate send from mobile platforms
+          window.localStorage.setItem(
+            "ordersPushedToGoogle",
+            JSON.stringify(ordersPushedToGoogle),
+          );
+        }
+      }
+
+      function getOrderId(dataLayer) {
+        if ("ecommerce" in dataLayer) {
+          if (
+            "purchase" in dataLayer.ecommerce &&
+            "actionField" in dataLayer.ecommerce.purchase &&
+            "id" in dataLayer.ecommerce.purchase.actionField
+          ) {
+            return dataLayer.ecommerce.purchase.actionField.id;
+          }
+        }
+
+        return -1;
+      }
+
+      function getGA4OrderId(dataLayer) {
+        if (
+          "ecommerce" in dataLayer &&
+          "transaction_id" in dataLayer.ecommerce
+        ) {
+          return dataLayer.ecommerce.transaction_id;
+        }
+
+        return -1;
+      }
+
+      function getOrdersPushedToGoogle() {
+        var ordersPushedToGoogleString = window.localStorage.getItem(
+          "ordersPushedToGoogle",
+        );
+        if (
+          ordersPushedToGoogleString &&
+          ordersPushedToGoogleString.length > 0
+        ) {
+          return JSON.parse(ordersPushedToGoogleString);
+        }
+
+        return [];
+      }
+
+      function orderHasBeenPushedToGoogle(orderId, ordersPushedToGoogle) {
+        if (orderId) {
+          for (var index = 0; index < ordersPushedToGoogle.length; index++) {
+            if (ordersPushedToGoogle[index] === orderId) {
+              return true;
+            }
+          }
+        }
+
+        return false;
+      }
+    </script>
+    <script>
+      if (window.gtmEnabled && window.sendCustomersGeolocationDataToGTM) {
+        sendCustomerGeolocationDataToGTM();
+      }
+
+      // Function to send the Customer Geolocation Data to GTM. This Function is added here because of below reason
+      // 1. the "pdict" scope variable is Not Accessible in JS.
+      // 2. We cannot send these values in URL Params or Window variable or any storage. As this will expose the location data in JS.
+      function sendCustomerGeolocationDataToGTM() {
+        if ("geolocation" in navigator) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              var customersGeolocationDataForGTM = [
+                {
+                  city1: "Surat",
+                  state1: "Gujarat",
+                  country1: "IN",
+                  zipCode1: "394101",
+                },
+              ];
+              dataLayer.push(customersGeolocationDataForGTM);
+            },
+            (error) => {
+              switch (error.code) {
+                case error.PERMISSION_DENIED:
+                case error.POSITION_UNAVAILABLE:
+                case error.TIMEOUT:
+                  break;
+                default:
+              }
+            },
+          );
+        }
+      }
+
+      window.dataLayer = window.dataLayer || [];
+      const queryString = window.location.search;
+      var query;
+      if (queryString) {
+        const urlParams = new URLSearchParams(queryString);
+        query = urlParams.get("q");
+      }
+      var customerdata = {
+        preferredCurrency: "INR",
+        customerId: "N/A",
+        customerIdHash: "N/A",
+        emailHash: "N/A",
+        email_id: "N/A",
+        mobileNumber: "N/A",
+        mobile_number: "N/A",
+        firstName: "N/A",
+        lastName: "N/A",
+        city: "N/A",
+        country: "N/A",
+        zipCode: "N/A",
+        loginStatus: false,
+        siteSection: "Home-Show",
+        pageType: "Home page",
+        websiteIdentifier: "tq-desktop",
+        dws_id:
+          "YRsCINriXn8ZzRkPbSynjRhoMMZYHVkZVKEa5f9lY0q_78otLAGoigIMGxmACv9yrn4-kEkHFFFMEEU6cnJIRg==",
+      };
+      if (query) {
+        customerdata.pageType = "Search Page";
+        customerdata.siteSection = "Search-Show";
+      }
+      dataLayer.push(customerdata);
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PMZQ6FN");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- DataCloud Script  -->
+    <script
+      src="https://cdn.c360a.salesforce.com/beacon/c360a/fbc3b777-cae6-4785-bbc3-b3092e218ff9/scripts/c360a.min.js"
+      defer=""
+    ></script>
+    <!-- End DataCloud Script  -->
+
+    <script
+      type="text/javascript"
+      src="//cdn.evgnet.com/beacon/titancompanyltd/prodtanishq/scripts/evergage.min.js"
+    ></script>
+  </head>
+
+  <body>
+
+    <!------------------------------------------------------------------------------ Menu Bar Start ----------------------------------------------------------------------->
+    
+    
+    
+    
+    
+    
+    <!------------------------------------------------------------------------------ Menu Bar End ----------------------------------------------------------------------->
+
+
+    <!------------------------------------------------------------------------------ Category Banner Start ----------------------------------------------------------------------->
+
+    <section class="banner">
+      <img
+        class="img-fluid banner-desktop"
+        src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw95048521/microsite/joy-of-dressing/bannerdesktopnyusha.jpg"
+      />
+    </section>
+
+    <!------------------------------------------------------------------------------ Category Banner End ----------------------------------------------------------------------->
+
+    <!------------------------------------------------------------------------------ Category Hader Name ----------------------------------------------------------------------->
+
+    <div class="container breadcrum-recommender-section search-results p-0">
+      <div
+        class="breadcrumb-content container tq-breadcrumbs-container border-0 pt-3 px-3"
+      >
+        <ol class="breadcrumb border-0 p-0 mb-1">
+          <li class="breadcrumb-item bread-styling previous-page">
+            <a href="Collection.html">Collection</a>
+          </li>
+          <li class="breadcrumn-separator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#56544E"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </li>
+          <li class="breadcrumb-active-item present-page" aria-current="page">
+            <h5>Khess</h5>
+          </li>
+        </ol>
+      </div>
+
+      <div class="plp-recommendation-placeholder"></div>
+    </div>
+    <div class="main-search-results-container">
+      <div class="border-shadow-container">
+        <div class="container search-results">
+          <div
+            class="notification-handler danger active plp-price-error-toast d-none"
+            role="alert"
+            aria-live="polite"
+          >
+            <div class="content">
+              <div class="custom-img">
+                <img
+                  src="/on/demandware.static/Sites-Tanishq-Site/-/default/dw7c64b883/images/x-circle.svg"
+                  alt="error"
+                  class="default-img"
+                />
+              </div>
+              <div class="item-type-alert plp-price-error-message"></div>
+              <div class="close-icon">
+                <div class="custom-img">
+                  <span class="svg-sprite toast-close-icon"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="tab-content col-12">
+              <div
+                class="tab-pane container active"
+                id="product-search-results"
+                role="tabpanel"
+                aria-labelledby="product-tab"
+              >
+                <div class="row grid-header d-none">
+                  <div
+                    class="result-count d-none text-center col-12 col-md-9 col-sm-6 order-sm-2"
+                  ></div>
+                </div>
+
+                <div class="floating-bar-container py-2">
+                  <div class="d-none d-lg-block">
+                    <div class="breadcrumb-container">
+                      <div class="breadcrumb-wrapper-full-width">
+                        <div class="breadcrumb-warpper-usable-width container">
+                          <div class="breadcrumb-warpper-flex">
+                            <h1 class="category-name">
+                              <span class="c-name"> Khess </span>
+                            </h1>
+                          </div>
+                          <div class="breadcrumb-content-asset d-none"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="breadcrumb-container-m">
+                      <div class="breadcrumb-warpper-flex">
+                        <div class="breadcrumb-content d-none">
+                          <ol class="breadcrumb border-0 p-0">
+                            <li class="breadcrumb-item bread-styling">
+                              <a href="Collection.html">Collection |</a>
+                            </li>
+                            <li
+                              class="breadcrumb-active-item"
+                              aria-current="page"
+                            >
+                              <h5>Khess</h5>
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="category-name">
+                          <span class="c-name"> Khess </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-lg-none">
+                    <div class="m-sticky-header-components-container">
+                      <div class="category-name-view">
+                        <p>Khess</p>
+                      </div>
+                      <div
+                        class="breadcrumb-content container tq-breadcrumbs-container pl-0"
+                      >
+                        <ol class="breadcrumb border-0 p-0 mb-1">
+                          <li
+                            class="breadcrumb-item bread-styling previous-page"
+                          >
+                            <a href="Collection.html">Collection</a>
+                          </li>
+                          <li class="breadcrumn-separator">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="12"
+                              height="12"
+                              fill="#56544E"
+                              class="bi bi-chevron-right"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                              />
+                            </svg>
+                          </li>
+                          <li
+                            class="breadcrumb-active-item present-page"
+                            aria-current="page"
+                          >
+                            <h5>Khess</h5>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="floating-bar-spacing-container"></div>
+                <div class="sort-by-custom-select-container">
+                  <div id="sortby-custom-select" class="d-md-none"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12 col-12">
+                    <div
+                      class="row product-grid"
+                      itemtype="http://schema.org/SomeProducts"
+                      itemid="#product"
+                    >
+                      <input
+                        type="hidden"
+                        id="maxPageForBackScrollInMWeb"
+                        value="5"
+                      />
+
+                      <input
+                        type="hidden"
+                        class="currentpagesize"
+                        value="24.0"
+                      />
+
+                      <div
+                        id="position-0"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="0"
+                      >
+                        <!-- CQuotient Activity Tracking (viewCategory-cquotient.js) -->
+
+                        <input
+                          type="hidden"
+                          name=""
+                          value="0.0"
+                          class="plpindex"
+                        />
+
+    <!------------------------------------------------------------------------------ Category Hader Name ----------------------------------------------------------------------->
+
+
+    <!------------------------------------------------------------------------------ Product Detail Start----------------------------------------------------------------------->
+
+
+    <!------------------------------------------------------------------------------ Product No 1 ----------------------------------------------------------------------->
+
+
+                        <div class="product" data-pid="50d2fffhfaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2fffhfaa29"
+                            data-lowestvariantpid="50d2fffhflaa292bd000005"
+                          >
+                            <span
+                              class="imagedisplay-similar d-none"
+                            ></span>
+                           
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                                target="_self"
+                                rel="noopener"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-01.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""
+                                />
+                              </a>
+                            </div>
+
+                            <div class="custom-stock-level-message mobile"></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">
+                                      A Glimpse of Lilac Ring
+                                    </h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 2 ----------------------------------------------------------------------->
+
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-02.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 3  ----------------------------------------------------------------------->
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-03.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                                href="https://www.tanishq.co.in/product/lovely-lilac-pendant-50d2ffphiaaa29.html?lang=en_IN"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 4  ----------------------------------------------------------------------->
+
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-04.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 5  ----------------------------------------------------------------------->
+
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-05.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 6  ----------------------------------------------------------------------->
+
+    
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-06.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 7  ----------------------------------------------------------------------->
+
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-07.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 8  ----------------------------------------------------------------------->
+
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-08.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 9  ----------------------------------------------------------------------->
+
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-09.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 10  ----------------------------------------------------------------------->
+
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-10.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 11  ----------------------------------------------------------------------->
+
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-11.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 12  ----------------------------------------------------------------------->
+
+
+                      <div
+                        id="position-1"
+                        class="col-6 col-sm-4"
+                        data-productpositioninplp="1"
+                      >
+                       
+                        <input
+                          type="hidden"
+                          name=""
+                          value="1.0"
+                          class="plpindex"
+                        />
+
+                        <div
+                          class="product"
+                          data-pid="50d2ffphiaaa29">
+                          <div
+                            class="product-tile mb-3 mb-sm-3 mb-md-4"
+                            data-pid="50d2ffphiaaa29"
+                            data-lowestvariantpid="50d2ffphiaaa292bd000079">
+                            <div
+                              class="image-container out-of-stock-product fis-product"
+                            >
+                              <a
+                                class="tile-image-content"
+                              >
+                                <img
+                                  class="aspect-ratio-img aspect-ratio tile-image hover-image"
+                                  src="./image/Product_Images/Khess/image-12.png?sw=480&amp;sh=480"
+                                  alt=""
+                                  title=""/>
+                              </a>
+                            </div>
+
+                            <div
+                              class="custom-stock-level-message mobile"
+                            ></div>
+
+                            <div class="tile-body">
+                              <a
+                                class="tile-wrapper"
+                                target="_self"
+                              >
+                                <div class="product-name">
+                                  <div class="pdp-link">
+                                    <h5 class="link">Lovely Lilac Pendant</h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+    <!------------------------------------------------------------------------------ Product No 13  ----------------------------------------------------------------------->
+
+
+    <!------------------------------------------------------------------------------ Product Details End ----------------------------------------------------------------------->
+
+    
+    <!------------------------------------------------------------------------------ Back To Top ----------------------------------------------------------------------->
+
+                      <div
+                        class="col-12 grid-footer"
+                        data-page-size="24.0"
+                        data-page-number="0"
+                      >
+                        <div class="d-none d-lg-block d-md-block">
+                          <button
+                            class="back-to-top tq-plp-gototop-btn"
+                            title="Back to top"
+                            aria-label="Back to top"
+                          >
+                            <img
+                              src="./image/scroll-top-arrow.png"
+                              alt=""
+                            />Back to top
+                          </button>
+                        </div>
+
+                        <div class="d-lg-none d-md-none">
+                          <button
+                            class="back-to-top tq-plp-gototop-btn"
+                            title="Back to top"
+                            aria-label="Back to top"
+                          >
+                            <img
+                              src="./image/scroll-top-arrow.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+
+                        <input
+                          type="hidden"
+                          class="category-id"
+                          value="Tq-Lilac-Allure"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- 
+                <div class="plp-recommendation lazy-plp-recommendation"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+    <!------------------------------------------------------------------------------ Back TO Top End ----------------------------------------------------------------------->
+
+    <!------------------------------------------------------------------------------ Footer Start----------------------------------------------------------------------->
+    
+    
+    <!------------------------------------------------------------------------------ Footer End----------------------------------------------------------------------->
+  </body>
+</html>

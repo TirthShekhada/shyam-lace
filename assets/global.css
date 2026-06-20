@@ -17273,7 +17273,7 @@ body:has(.login-mobile) .close-menu .login-mobile-link {
   margin-left: calc(var(--icon-space) * -1);
   width: var(--icon-space);
   float: right !important;
-  color: #000 !important;
+  color: #2f3092 !important;
   position: absolute;
   right: 0;
   top: 50%;
@@ -17436,11 +17436,13 @@ body:has(.login-mobile) .close-menu .login-mobile-link {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 .m-sub-v-category-h a {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 450;
   line-height: 16.8px;
   letter-spacing: -0.01em;
   text-align: left;
@@ -20493,7 +20495,7 @@ footer .back-to-top i.fa-circle {
   text-decoration: none;
 }
 .footer-div {
-  background: #300708 0% 0% no-repeat padding-box;
+  background: #000035 0% 0% no-repeat padding-box;
   margin: 20px;
   border-radius: 12px;
   max-width: 100vw;
@@ -20593,16 +20595,20 @@ footer .back-to-top i.fa-circle {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  width: 250px;
+  /* width: 250px; */
+  width: 300px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
 @media (max-width: 1023.98px) {
   .footer-div .logo-newletter-section .tanishq-logo {
-    width: 100px;
-    height: 34px;
-    margin-bottom: 1.5rem;
+    /* width: 100px;
+    height: 34px; */
+    width: auto;
+    height: auto;
+    margin-bottom: -1.5rem;
+    /* margin-bottom: 1.5rem; */
   }
 }
 .footer-div .logo-newletter-section .newsletter-section {

@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Occasion Special</title>
+
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://cdn.cquotient.com" />
+    <link rel="preconnect" href="https://accounts.tatadigital.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="./assets/swiperSlider.css"
+      as="style"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="./assets/swiperSlider.css" />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="./assets/accordion.css"
+      as="style"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="./assets/accordion.css" />
+    </noscript>
+    <link
+      rel="preload"
+      href="/on/demandware.static/Sites-Tanishq-Site/-/default/dw3a0589bb/fonts/nunitosans-regular-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <style>
+      @font-face {
+        font-family: "Cabrito Didone";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Cabrito Didone"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw4dfbe964/fonts/CabritoDidone.ttf)
+            format("ttf");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Proxima Nova Thin";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Proxima Nova Thin"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwce5a1383/fonts/ProximaNovaT-Thin.woff)
+            format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Proxima Nova Regular";
+        font-style: normal;
+        font-weight: normal;
+        src:
+          local("Proxima Nova Regular"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw9961258f/fonts/ProximaNova-Regular.woff)
+            format("woff");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansblack";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwbfecbfea/fonts/nunitosans-black-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw920a29ec/fonts/nunitosans-black-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw495036e2/fonts/nunitosans-black-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansbold";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw019bb1c7/fonts/nunitosans-bold-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwdfdbca5f/fonts/nunitosans-bold-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwf492b9ea/fonts/nunitosans-bold-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansextrabold";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw915243b4/fonts/nunitosans-extrabold-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwd23c8499/fonts/nunitosans-extrabold-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwafcacf7f/fonts/nunitosans-extrabold-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansextralight";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwd0bcf025/fonts/nunitosans-extralight-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwf5438543/fonts/nunitosans-extralight-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw7915ed0b/fonts/nunitosans-extralight-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sanslight";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwbeb3ca5c/fonts/nunitosans-light-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwbe34bdb9/fonts/nunitosans-light-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwc73a9fdf/fonts/nunitosans-light-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sansregular";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw3a0589bb/fonts/nunitosans-regular-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw64b12a2b/fonts/nunitosans-regular-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw362891b6/fonts/nunitosans-regular-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "nunito_sanssemibold";
+        src:
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dwaf929730/fonts/nunitosans-semibold-webfont.woff2)
+            format("woff2"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw07262ecb/fonts/nunitosans-semibold-webfont.woff)
+            format("woff"),
+          url(/on/demandware.static/Sites-Tanishq-Site/-/default/dw4c899880/fonts/nunitosans-semibold-webfont.ttf)
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <!--[if gt IE 9]><!-->
+    <script defer="" type="text/javascript" src="./assets/main.js"></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="./assets/catResponsive.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="./assets/multiImageLayout.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="./assets/homepageVideoBannerAutoPlay.js"
+    ></script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="./assets/campaignBanner.js"
+    ></script>
+    <script defer="" type="text/javascript" src="./assets/tryItOn.js"></script>
+    <!--<![endif]-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Shyam Lace</title>
+    <meta name="description" content="Shyam Lace" />
+    <!-- Fix for Flash of Unstyled Content ( FOUC ) -->
+    <!-- Reference links: https://dev.to/lyqht/what-the-fouc-is-happening-flash-of-unstyled-content-413j , https://webkit.org/blog/66/the-fouc-problem/ -->
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
+    <!-- Critical inline CSS for above-the-fold rendering (extracted from head.css / global.css) -->
+    <style>
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        min-height: 100vh;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <link rel="alternate" hreflang="en-ae" href="https://www.tanishq.ae/" />
+    <link rel="alternate" hreflang="en-us" href="https://www.tanishq.com/" />
+    <link rel="alternate" hreflang="en-ca" href="https://www.tanishq.com/ca/" />
+    <link rel="icon" type="image/png" href="./image/favicon.png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      as="style"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <!-- Fallback that only gets inserted when JavaScript is disabled, in which case we can't load CSS asynchronously. -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    </noscript>
+    <link rel="stylesheet" href="./assets/global.css" />
+    <link rel="stylesheet" href="./assets/head.css" />
+    <link rel="stylesheet" href="./assets/swiperSlider.css" />
+    <link rel="stylesheet" href="./assets/accordion.css" />
+    <meta
+      name="google-site-verification"
+      content="5BjsAn58YNoCy-4owF74RAq9uO9lLEhWpakp6C9MuSo"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/contentAssetCommonStyle.css"
+      as="style"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <!-- Fallback that only gets inserted when JavaScript is disabled, in which case we can't load CSS asynchronously. -->
+    <noscript>
+      <link rel="stylesheet" href="./assets/contentAssetCommonStyle.css" />
+    </noscript>
+    <script
+      src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/en_IN/v1780118099705/js/contentAssetCommonScript.js"
+      defer=""
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./assets/skin.css"
+      as="style"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <!-- Fallback that only gets inserted when JavaScript is disabled, in which case we can't load CSS asynchronously. -->
+    <noscript>
+      <link rel="stylesheet" href="./assets/skin.css" />
+    </noscript>
+    <script>
+      var pageAction = "homeshow";
+      window.dataLayer = window.dataLayer || [];
+      window.gtmEnabled = true;
+      window.sendCustomersGeolocationDataToGTM = true;
+      var orderId = -1;
+      var dataLayerEvent = { event: "home", currentPageView: "HomePageView" };
+
+      // In all cases except Order Confirmation, the data layer should be pushed, so default to that case
+      var pushDataLayer = true;
+      if (pageAction === "orderconfirm") {
+        // As of now, the correction is for order confirmation only
+        if (dataLayerEvent) {
+          orderId = getOrderId(dataLayerEvent);
+        }
+
+        var ordersPushedToGoogle = getOrdersPushedToGoogle();
+        var orderHasBeenPushedToGoogle = orderHasBeenPushedToGoogle(
+          orderId,
+          ordersPushedToGoogle,
+        );
+        if (orderHasBeenPushedToGoogle) {
+          // If the data has already been sent, let's not push it again.
+          pushDataLayer = false;
+        }
+      }
+
+      if (pushDataLayer) {
+        if (dataLayerEvent) {
+          dataLayer.push(dataLayerEvent);
+        }
+
+        if (pageAction === "orderconfirm") {
+          // Add the orderId to the array of orders that is being stored in localStorage
+          ordersPushedToGoogle.push(orderId);
+          // The localStorage is what is used to prevent the duplicate send from mobile platforms
+          window.localStorage.setItem(
+            "ordersPushedToGoogle",
+            JSON.stringify(ordersPushedToGoogle),
+          );
+        }
+      }
+
+      function getOrderId(dataLayer) {
+        if ("ecommerce" in dataLayer) {
+          if (
+            "purchase" in dataLayer.ecommerce &&
+            "actionField" in dataLayer.ecommerce.purchase &&
+            "id" in dataLayer.ecommerce.purchase.actionField
+          ) {
+            return dataLayer.ecommerce.purchase.actionField.id;
+          }
+        }
+
+        return -1;
+      }
+
+      function getGA4OrderId(dataLayer) {
+        if (
+          "ecommerce" in dataLayer &&
+          "transaction_id" in dataLayer.ecommerce
+        ) {
+          return dataLayer.ecommerce.transaction_id;
+        }
+
+        return -1;
+      }
+
+      function getOrdersPushedToGoogle() {
+        var ordersPushedToGoogleString = window.localStorage.getItem(
+          "ordersPushedToGoogle",
+        );
+        if (
+          ordersPushedToGoogleString &&
+          ordersPushedToGoogleString.length > 0
+        ) {
+          return JSON.parse(ordersPushedToGoogleString);
+        }
+
+        return [];
+      }
+
+      function orderHasBeenPushedToGoogle(orderId, ordersPushedToGoogle) {
+        if (orderId) {
+          for (var index = 0; index < ordersPushedToGoogle.length; index++) {
+            if (ordersPushedToGoogle[index] === orderId) {
+              return true;
+            }
+          }
+        }
+
+        return false;
+      }
+    </script>
+    <script>
+      if (window.gtmEnabled && window.sendCustomersGeolocationDataToGTM) {
+        sendCustomerGeolocationDataToGTM();
+      }
+
+      function sendCustomerGeolocationDataToGTM() {
+        if ("geolocation" in navigator) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              var customersGeolocationDataForGTM = [
+                {
+                  city1: "Surat",
+                  state1: "Gujarat",
+                  country1: "IN",
+                  zipCode1: "394101",
+                },
+              ];
+              dataLayer.push(customersGeolocationDataForGTM);
+            },
+            (error) => {
+              switch (error.code) {
+                case error.PERMISSION_DENIED:
+                case error.POSITION_UNAVAILABLE:
+                case error.TIMEOUT:
+                  break;
+                default:
+              }
+            },
+          );
+        }
+      }
+
+      window.dataLayer = window.dataLayer || [];
+      const queryString = window.location.search;
+      var query;
+      if (queryString) {
+        const urlParams = new URLSearchParams(queryString);
+        query = urlParams.get("q");
+      }
+      var customerdata = {
+        preferredCurrency: "INR",
+        customerId: "N/A",
+        customerIdHash: "N/A",
+        emailHash: "N/A",
+        email_id: "N/A",
+        mobileNumber: "N/A",
+        mobile_number: "N/A",
+        firstName: "N/A",
+        lastName: "N/A",
+        city: "N/A",
+        country: "N/A",
+        zipCode: "N/A",
+        loginStatus: false,
+        siteSection: "Home-Show",
+        pageType: "Home page",
+        websiteIdentifier: "tq-desktop",
+        dws_id:
+          "YRsCINriXn8ZzRkPbSynjRhoMMZYHVkZVKEa5f9lY0q_78otLAGoigIMGxmACv9yrn4-kEkHFFFMEEU6cnJIRg==",
+      };
+      if (query) {
+        customerdata.pageType = "Search Page";
+        customerdata.siteSection = "Search-Show";
+      }
+      dataLayer.push(customerdata);
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PMZQ6FN");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- DataCloud Script  -->
+    <script
+      src="https://cdn.c360a.salesforce.com/beacon/c360a/fbc3b777-cae6-4785-bbc3-b3092e218ff9/scripts/c360a.min.js"
+      defer=""
+    ></script>
+    <!-- End DataCloud Script  -->
+
+    <script
+      type="text/javascript"
+      src="//cdn.evgnet.com/beacon/titancompanyltd/prodtanishq/scripts/evergage.min.js"
+    ></script>
+  </head>
+
+  <body>
+    
+<!------------------------------------------------------------------------------ Menu Bar Start ----------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------ Menu Bar End ----------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------------ Collection Section Start ----------------------------------------------------------------------->
+
+
+    <div role="main" id="maincontent" class="overflow-hidden">
+      <div class="storepage" id="lp-thejoyofdressing">
+        <div class="row">
+          <div class="col-12"></div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="experience-component experience-commerce_assets-contentAsset"
+            >
+              <div class="contentasset-component-container d-lg-block px-2">
+                <div class="content-asset thejoyofdressing">
+                  <!-- dwMarker="content" dwContentID="17212b613002306e0dc4ee1c38" -->
+                  <meta charset="UTF-8" />
+                  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                  <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                  />
+                  <title>Joy of Dressing</title>
+                  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+                  <style>
+                    .px-2 {
+                      padding: 0 !important;
+                    }
+
+                    .mt-4 {
+                      margin: 0 !important;
+                    }
+
+                    a {
+                      text-decoration: none !important;
+                    }
+
+                    body {
+                      scroll-behavior: smooth;
+                    }
+
+                    .banner {
+                      margin-bottom: 50px;
+                    }
+
+                    .section-shopnow {
+                      padding-bottom: 50px;
+                    }
+
+                    .section-products {
+                      padding: 30px;
+                    }
+
+                    .jod {
+                      width: 250px;
+                      margin: auto;
+                    }
+
+                    .figure {
+                      display: block !important;
+                    }
+
+                    .fig-title {
+                      font-size: 16px;
+                      font-weight: 600;
+                      font-family: "Fraunces";
+                      text-align: center;
+                      letter-spacing: initial;
+                      line-height: normal;
+                      height: 35px;
+                      /* text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap; */
+                    }
+
+                    .fig-desc {
+                      font-size: 14px;
+                      font-weight: 500;
+                      font-family: "IBM PLEX SANS";
+                      text-align: center;
+                      letter-spacing: -0.01em;
+                      line-height: normal;
+                      line-height: 1.1;
+                    }
+
+                    figcaption {
+                      padding: 0 5%;
+                    }
+
+                    .d-flex {
+                      display: flex;
+                    }
+
+                    .m-20 {
+                      margin: 20px 0px;
+                    }
+
+                    .p-0 {
+                      padding: 0px !important;
+                    }
+
+                    .col-pad {
+                      /* padding:0px; */
+                      margin-bottom: 20px;
+                    }
+
+                    .banner-desktop {
+                      display: block !important;
+                    }
+
+                    .banner-mobile {
+                      display: none !important;
+                    }
+
+                    .br-15 {
+                      border-radius: 5px;
+                      /* border: 1px solid #b8b1b1; */
+                    }
+
+                    .br-15 img {
+                      border-radius: 5px 5px 5px 5px;
+                    }
+
+                    .shop-now {
+                      background: #000;
+                      color: #fff;
+                      padding: 15px 40px;
+                      font-family: "IBM PLEX SANS";
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 1.4;
+                      text-align: center;
+                      white-space: nowrap;
+                      vertical-align: middle;
+                      border: 1px solid transparent;
+                      border-radius: 2px;
+                      text-transform: uppercase;
+                      transition: all 0.2s ease-out;
+                      text-decoration: none;
+                    }
+
+                    .shop-now:hover {
+                      background: #fff;
+                      color: #000;
+                      border: 1px solid #000;
+                      text-decoration: none;
+                    }
+
+                    @media (max-width: 767px) {
+                      .banner-mobile {
+                        display: block !important;
+                      }
+
+                      .banner-desktop {
+                        display: none !important;
+                      }
+                    }
+
+                    @media (max-width: 576px) {
+                      .fig-title {
+                        font-size: 14px;
+                        height: 40px;
+                      }
+
+                      .fig-desc {
+                        font-size: 14px;
+                      }
+                    }
+                  </style>
+
+<!------------------------------------------------------------------------------ Navratri Special ----------------------------------------------------------------------->
+   
+                  <div class="wrapper">
+                    <section class="section-products">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw4c51e35e/images/hi-res/50D5L1YCOAA02_1.jpg"
+                                  class="img-fluid"
+                                />
+                               </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw2d00744c/images/hi-res/50D5L1YCUAA02_1.jpg"
+                                  class="img-fluid"
+                                />
+                              </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw31bb140f/images/hi-res/50D5L1YCPAA02_1.jpg"
+                                  class="img-fluid"
+                                />
+                              </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                          <div class="br-15">
+                            <img
+                              src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw8139388b/microsite/joy-of-dressing/station-mangalsutras-desktop-text.jpg"
+                              class="img-fluid banner-desktop"
+                            />
+                            <img
+                              src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw48d8fd1a/microsite/joy-of-dressing/station-mangalsutras-mobile-text.jpg"
+                              class="img-fluid banner-mobile"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="container-fluid section-shopnow">
+                      <div class="col-md-12 text-center">
+                        <a
+                          href="https://www.tanishq.co.in/shop/mangalsutra?lang=en_IN"
+                          class="shop-now"
+                          >Shop The Collection</a
+                        >
+                      </div>
+                    </section>
+                  </div>
+
+ <!------------------------------------------------------------------------------ Diwali Special ----------------------------------------------------------------------->
+
+                  <div class="wrapper">
+                    <section class="section-products">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw67ae88c0/images/hi-res/50D5L1FFMAA09_1.jpg"
+                                  class="img-fluid"
+                                />
+                              </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                          <div class="br-15">
+                            <figure class="figure">
+                              <img
+                                src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw999e89e1/images/hi-res/50D5L1PDBAAA29_1.jpg"
+                                class="img-fluid"
+                              />
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                          <div class="br-15">
+                            <figure class="figure">
+                              <img
+                                src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1d106986/images/hi-res/50D5L1FFNAA09_1.jpg"
+                                class="img-fluid"
+                              />
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                          <div class="br-15">
+                            <img
+                              src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw66f45329/microsite/joy-of-dressing/floral-bloom-text-desktop.jpg"
+                              class="img-fluid banner-desktop"
+                            />
+                            <img
+                              src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw5ffdfea6/microsite/joy-of-dressing/floral-bloom-text-mobile.jpg"
+                              class="img-fluid banner-mobile"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="container-fluid section-shopnow">
+                      <div class="col-md-12 text-center">
+                        <a
+                          href="https://www.tanishq.co.in/shop/floral-bloom?lang=en_IN"
+                          class="shop-now"
+                          >Shop The Collection</a
+                        >
+                      </div>
+                    </section>
+                  </div>
+                  
+<!------------------------------------------------------------------------------ Karva Chauth Special ----------------------------------------------------------------------->
+
+                  <div class="wrapper">
+                    <section class="section-products">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw861776d8/images/hi-res/50D5VDSAAAGA09_1.jpg"
+                                  class="img-fluid"
+                                />
+                              </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw50a2ea57/images/hi-res/50D5VDYAEAA09_1.jpg"
+                                  class="img-fluid"
+                                />
+                              </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwd93a09f6/images/hi-res/50D6VDFAMAA09_1.jpg"
+                                  class="img-fluid"
+                                />
+                              </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                          <div class="br-15">
+                            <img
+                              src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw3c0c634d/microsite/joy-of-dressing/valentines-special-desktop-text.jpg"
+                              class="img-fluid banner-desktop"
+                            />
+                            <img
+                              src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwfc1908aa/microsite/joy-of-dressing/valentines-special-mobile-text.jpg"
+                              class="img-fluid banner-mobile"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="container-fluid section-shopnow">
+                      <div class="col-md-12 text-center">
+                        <a
+                          href="https://www.tanishq.co.in/shop/valentines?lang=en_IN"
+                          class="shop-now"
+                          >Shop The Collection</a
+                        >
+                      </div>
+                    </section>
+                  </div>
+
+<!------------------------------------------------------------------------------ Wedding Special ----------------------------------------------------------------------->
+                  
+                  <div class="wrapper">
+                    <section class="section-products">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw23924cf8/microsite/joy-of-dressing/50D2FFSQGAGA02.jpg"
+                                  class="img-fluid"
+                                />
+                              </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwde8563a5/microsite/joy-of-dressing/50D2FFPRGAAA02.jpg"
+                                  class="img-fluid"
+                                />
+                              </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                          <a
+                            href="https://www.tanishq.co.in/product/bliss-of-innocence-ring-50d2fffqraa02.html?lang=en_IN"
+                          >
+                            <div class="br-15">
+                              <figure class="figure">
+                                <img
+                                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwa83f9f9e/microsite/joy-of-dressing/50D2FFFQRAA02.jpg"
+                                  class="img-fluid"
+                                />
+                              </figure>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 col-pad">
+                          <div class="br-15">
+                            <img
+                              src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw2b9bede3/microsite/joy-of-dressing/sparklingavenuestextd.jpg"
+                              class="img-fluid banner-desktop"
+                            />
+                            <img
+                              src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw1137a2c9/microsite/joy-of-dressing/sparklingavenuestextm.jpg"
+                              class="img-fluid banner-mobile"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="container-fluid section-shopnow">
+                      <div class="col-md-12 text-center">
+                        <a
+                          href="https://www.tanishq.co.in/shop/sparkling-avenues?lang=en_IN"
+                          class="shop-now"
+                          >Shop The Collection</a
+                        >
+                      </div>
+                    </section>
+                  </div>
+
+<!------------------------------------------------------------------------------ ------------ ----------------------------------------------------------------------->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12"></div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------ Collection Section End ----------------------------------------------------------------------->
+
+    <!------------------------------------------------------------------------------ Footer Start----------------------------------------------------------------------->
+
+
+    <!------------------------------------------------------------------------------ Footer End----------------------------------------------------------------------->
+
+
+    
+
+<!------------------------------------------------------------------------------ Pop Up Start ----------------------------------------------------------------------->
+         
+<!------------------------------------------------------------------------------ Pop Up End ----------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------ Assan ----------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------ Door Toran ----------------------------------------------------------------------->
+
+  </body>
+</html>
