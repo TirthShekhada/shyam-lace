@@ -150,3 +150,19 @@ header .custom-img svg {
         width: 100%;
     }
 }
+
+.custom-swiper-slider-container
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #2f3092 !important;
+}
+
+.custom-swiper-slider-container .swiper-pagination-bullet {
+    background-color: #2f3092 !important;
+}
+
+@media (max-width: 768px) {
+    .experience-commerce_layouts-swiperSlider .swiper-pagination {
+        bottom: 40px !important;
+    }
+}

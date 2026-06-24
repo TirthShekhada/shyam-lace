@@ -20512,21 +20512,21 @@ footer .back-to-top i.fa-circle {
 }
 .footer-div .top-border-curve {
   position: absolute;
-  top: 0;
+  top: -1px;
   width: 10vw;
   height: auto;
   left: 45%;
   right: 45%;
 }
 .footer-div .bottom-border-curve {
-  position: absolute;
-  bottom: -1px;
-  width: 10vw;
-  height: auto;
-  left: 45%;
-  right: 45%;
-  -webkit-transform: scale(-1, -1);
-  transform: scale(-1, -1);
+    position: absolute;
+    bottom: -1px;
+    width: 10vw;
+    height: 24px;
+    left: 45%;
+    right: 45%;
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
 }
 .footer-div li {
   text-align: left;
