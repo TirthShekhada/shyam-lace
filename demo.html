@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Search Bar</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Search Container */
+        .search-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        /* Search Box Layout */
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            border-color: #007bff;
+        }
+
+        .search-box button {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .search-box button:hover {
+            background-color: #0056b3;
+        }
+
+        /* List Items Styling */
+        .results-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .item {
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #333;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .item:hover {
+            background-color: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        /* Hidden Class for Filtering */
+        .hidden {
+            display: none !important;
+        }
+
+        /* No Results Message */
+        .no-results {
+            text-align: center;
+            color: #888;
+            padding: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <!-- Search input and button wrapper -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Type to search items...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- List of searchable content -->
+        <ul class="results-list" id="listContainer">
+            <li class="item">HTML Basics</li>
+            <li class="item">CSS Flexbox Guide</li>
+            <li class="item">JavaScript Promises</li>
+            <li class="item">React Components</li>
+            <li class="item">Node.js API Tutorial</li>
+            <li class="item">Python for Data Science</li>
+            <li class="item">Web Security Essentials</li>
+        </ul>
+        
+        <!-- Placeholder for when nothing matches -->
+        <div id="noResultsMessage" class="no-results hidden">No items found</div>
+    </div>
+
+    <script>
+        // Get references to DOM elements
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const listItems = document.querySelectorAll('#listContainer .item');
+        const noResultsMessage = document.getElementById('noResultsMessage');
+
+        // Core filtering function
+        function performSearch() {
+            const query = searchInput.value.toLowerCase().trim();
+            let hasMatches = false;
+
+            listItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                
+                // If text matches the query, show it; otherwise hide it
+                if (text.includes(query)) {
+                    item.classList.remove('hidden');
+                    hasMatches = true;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+
+            // Toggle the "No items found" message based on results
+            if (hasMatches) {
+                noResultsMessage.classList.add('hidden');
+            } else {
+                noResultsMessage.classList.remove('hidden');
+            }
+        }
+
+        // Event 1: Trigger search when the button is clicked
+        searchBtn.addEventListener('click', performSearch);
+
+        // Event 2: Trigger search instantly while typing (Real-time filtering)
+        searchInput.addEventListener('input', performSearch);
+
+        // Event 3: Trigger search when user presses the "Enter" key inside the input
+        searchInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+
+</body>
+</html>
