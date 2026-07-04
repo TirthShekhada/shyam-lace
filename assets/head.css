@@ -3127,3 +3127,8 @@ header .form-control:focus {
   height: 100%;
   border-radius: 12px !important;
 }
+
+.back-btn img{
+  max-width: 15px;
+  height: 15px;
+}
