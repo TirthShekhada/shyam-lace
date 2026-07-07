@@ -1188,7 +1188,7 @@ a.cta i {
     border: 1px solid #f2e7e9;
     background: #f2e7e9;
     border-radius: 20px;
-    /* padding: 150px 70px 50px 150px; */ 
+    padding: 0px !important; 
 }
 .gift-section img {
     position: relative;
@@ -1202,6 +1202,7 @@ a.cta i {
     content: '';
     position: absolute;
     background: linear-gradient(0.03deg, #a83235 -16.73%, #631517 99.59%);
+    display: none;
 }
 .gift-section::before {
     width: 40px;

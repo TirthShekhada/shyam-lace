@@ -109,6 +109,7 @@ header .custom-img svg {
     border-radius: 10px;
     overflow: hidden;
 }
+
 .section-products .br-15,
 .section-products .br-15 figure {
     height: 100%;
@@ -145,9 +146,10 @@ header .custom-img svg {
 
 @media (max-width: 576px) {
     .section-products img {
-        height: 170px !important;
+        height: 100% !important;
         object-fit: cover;
         width: 100%;
+        aspect-ratio: 1/1;
     }
 }
 
@@ -165,4 +167,15 @@ header .custom-img svg {
     .experience-commerce_layouts-swiperSlider .swiper-pagination {
         bottom: 40px !important;
     }
+    
+    /* .wrapper .row .col-pad {
+        padding: 0px;
+        margin-bottom: 0;
+    }
+
+    .wrapper .row{
+        gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
 }
